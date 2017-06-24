@@ -1,0 +1,29 @@
+{
+  "name": "temperature-server",
+  "version": "1.0.0",
+  "description": "temperature-server is a simple temperature tracking server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toksaitov/temperature.git"
+  },
+  "keywords": [
+    "temperature",
+    "IoT",
+    "Arduino",
+    "ESP-12"
+  ],
+  "author": "Dmitrii Toksaitov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toksaitov/temperature/issues"
+  },
+  "homepage": "https://github.com/toksaitov/temperature#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
