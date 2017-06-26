@@ -33,7 +33,7 @@ echo "Starting the server."
 
 pushd .
 cd ..
-node "temperature.js" &
+node "temperature-back.js" &
 popd
 
 PIDS="$PIDS $!"

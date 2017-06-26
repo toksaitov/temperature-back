@@ -1,7 +1,7 @@
-temperature-server
-==================
+temperature-back
+================
 
-_temperature-server_ is a simple server to track temperature.
+_temperature-back_ is a simple server to track temperature.
 
 ## Requirements
 
@@ -14,7 +14,7 @@ Create an `.env` file with secrets and parameters for all the components.
 
 ```bash
 # Database
-TEMPERATURE_DATABASE_HOST=the location of the database server (temperature-server-data-db by default)
+TEMPERATURE_DATABASE_HOST=the location of the database server (temperature-data-db by default)
 TEMPERATURE_DATABASE_PORT=the database port (3306 by default)
 TEMPERATURE_DATABASE_DIALECT=the dialect of the database management engine (mysql by default)
 TEMPERATURE_DATABASE_NAME=the name of the database (temperature by default)
@@ -53,8 +53,8 @@ cd development
 Ensure that the following host can be resolved into an IP address of the actual
 services on your setup
 
-* *temperature-server-data-db*: resolve to an instance of a MySQL database with
-  all the measurements
+* *temperature-data-db*: resolve to an instance of a MySQL database with all the
+  measurements
 
 There are many approaches that you can use for name resolution. You can add
 entries to `/etc/hosts` manually, setup a DNS server or utilize Docker Networks
@@ -75,9 +75,9 @@ to manage `/etc/hosts` files across containers automatically.
 
 ## Docker Hub
 
-[toksaitov/temperature-server](https://hub.docker.com/r/toksaitov/temperature-server)
+[toksaitov/temperature-back](https://hub.docker.com/r/toksaitov/temperature-back)
 
 ## Credits
 
-*temperature-server* was created by [Dmitrii Toksaitov](https://github.com/toksaitov).
+*temperature-back* was created by [Dmitrii Toksaitov](https://github.com/toksaitov).
 

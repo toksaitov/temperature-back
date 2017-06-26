@@ -21,7 +21,7 @@ let databasePassword =
     process.env['TEMPERATURE_DATABASE_PASSWORD'];
 
 if (databaseHost == null) {
-    databaseHost = 'temperature-server-data-db';
+    databaseHost = 'temperature-data-db';
 
     console.warn(
         'The database host "TEMPERATURE_DATABASE_HOST" is not set in the ' +

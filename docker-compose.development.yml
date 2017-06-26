@@ -3,4 +3,5 @@ version: "2.1"
 services:
   temperature-server:
     volumes:
-      - ".:/temperature-server"
+      - ".:/temperature-back"
+

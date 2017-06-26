@@ -1,11 +1,11 @@
 {
-  "name": "temperature-server",
+  "name": "temperature-back",
   "version": "1.0.0",
-  "description": "temperature-server is a simple temperature tracking server.",
-  "main": "temperature.js",
+  "description": "temperature-back is a simple temperature tracking server.",
+  "main": "temperature-back.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node temperature.js"
+    "start": "node temperature-back.js"
   },
   "repository": {
     "type": "git",
@@ -33,4 +33,3 @@
     "sequelize": "^4.2.0"
   }
 }
-

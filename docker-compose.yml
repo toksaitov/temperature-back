@@ -1,16 +1,17 @@
 version: "2.1"
 
 services:
-  temperature-server:
+  temperature-back:
     build: "."
-    image: "toksaitov/temperature-server"
+    image: "toksaitov/temperature-back"
     ports:
       - "80:7373"
     env_file:
       - ".env"
     depends_on:
-      - "temperature-server-mysql-db"
-  temperature-server-mysql-db:
+      - "temperature-mysql-db"
+
+  temperature-mysql-db:
     image: "mysql:5.7.18"
     environment:
       - "MYSQL_ROOT_PASSWORD=${TEMPERATURE_DATABASE_PASSWORD}"
@@ -20,5 +21,5 @@ services:
     networks:
       default:
         aliases:
-          - "temperature-server-data-db"
+          - "temperature-data-db"
 
