@@ -53,8 +53,8 @@ cd development
 Ensure that the following host can be resolved into an IP address of the actual
 services on your setup
 
-* *temperature-data-db*: resolve to an instance of a MySQL database with all the
-  measurements
+* *temperature-server-data-db*: resolve to an instance of a MySQL database with
+  all the measurements
 
 There are many approaches that you can use for name resolution. You can add
 entries to `/etc/hosts` manually, setup a DNS server or utilize Docker Networks
