@@ -14,6 +14,7 @@ services:
   temperature-mysql-db:
     image: "mysql:5.7.18"
     environment:
+      - "MYSQL_ALLOW_EMPTY_PASSWORD=yes"
       - "MYSQL_ROOT_PASSWORD=${TEMPERATURE_DATABASE_PASSWORD}"
       - "MYSQL_DATABASE=${TEMPERATURE_DATABASE_NAME:-temperature}"
       - "MYSQL_USER=${TEMPERATURE_DATABASE_USER:-temperature_user}"
